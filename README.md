@@ -1,17 +1,20 @@
-## Proyecto-GitHub: Configuración de red
+<div align="center"><img src="https://www.brandbucket.com/sites/default/files/logo_uploads/334406/large_devmonks.png"></div>
 
-  - Realizar configuración básica y enrutamiento dinámico OSPF área única.
-  - Aplicar mejoras prácticas de seguridad en las configuraciones.
-  - Al final, debe haber comunicación entre todos los dispositivos.
-  
+***
+# **Proyecto-GitHub: Configuración de red**
+
+  1. Realizar configuración básica y enrutamiento dinámico OSPF área única.
+  2. Aplicar mejoras prácticas de seguridad en las configuraciones.
+  3. Al final, debe haber comunicación entre todos los dispositivos.
+
 ## Datos generales.
   
   * 1a IP de cada red como Gateway.
   * 2da IP a Switches.
   * 3a IP a PC´s.
   
-## _Documentar_
-## Cálculos VLSM
+## Documentación
+### Cálculos VLSM
 
 | Subnet Name | Needed Size | Address | Mask | Dec Mask | Assignable Range |
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -24,4 +27,32 @@
 | TI | 60 | 172.16.78.192 | /26 | 255.255.255.192 | 172.16.78.193 - 172.16.78.254 |
 
 
-## Tabla de direccionamiento para cada dispositivo. 
+### TablaS de direccionamiento... 
+
+
+Por hacer:
+* [ ] Documentación
+- ✅ VLSM
+- * [ ] Tablas de Enrutamiento
+* [ ] Configuración
+- * [ ] R - Son
+   - * [ ] Red Sensores
+      - * [ ] Configuración Básica
+      - * [ ] Enrutamiento OSPFv2
+   - * [ ] Red Producción
+      - * [ ] Configuración Básica
+      - * [ ] Enrutamiento OSPFv2
+- * [ ] R - Mor
+   - * [ ] Red Personal
+      - * [ ] Configuración Básica
+      - * [ ] Enrutamiento OSPFv2 
+   - * [ ] Red Almacen 
+      - *  [ ] Configuración Básica
+      - * [ ] Enrutamiento OSPFv2 
+- * [ ] R - Chis 
+   - * [ ] Red Contabilidad/Legal
+      - *  [ ] Configuración Básica
+      - *  [ ] Enrutamiento OSPFv2 
+    - * [ ] Red TI
+      - * [ ] Configuración Básica
+      - *  [ ] Enrutamiento OSPFv2 
