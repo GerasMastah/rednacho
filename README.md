@@ -27,7 +27,7 @@
 | TI | 60 | 172.16.78.192 | /26 | 255.255.255.192 | 172.16.78.193 - 172.16.78.254 |
 
 
-### TablaS de direccionamiento... 
+### Tablas de direccionamiento... 
 
 
 Por hacer:
