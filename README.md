@@ -1,10 +1,10 @@
 ## Proyecto-GitHub: Configuración de red
 
-  * Realizar configuración básica y enrutamiento dinámico OSPF área única.
-  * Aplicar mejoras prácticas de seguridad en las configuraciones.
-  * Al final, bebe haber comunicación entre todos los dispositivos.
+  - Realizar configuración básica y enrutamiento dinámico OSPF área única.
+  - Aplicar mejoras prácticas de seguridad en las configuraciones.
+  - Al final, debe haber comunicación entre todos los dispositivos.
   
-## Datos generas.
+## Datos generales.
   
   * 1a IP de cada red como Gateway.
   * 2da IP a Switches.
