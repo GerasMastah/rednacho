@@ -1,17 +1,17 @@
-##Proyecto-GitHub: Configuración de red
+## Proyecto-GitHub: Configuración de red
 
-  *Realizar configuración básica y enrutamiento dinámico OSPF área única.
-  *Aplicar mejoras prácticas de seguridad en las configuraciones.
-  *Al final, bebe haber comunicación entre todos los dispositivos.
+  * Realizar configuración básica y enrutamiento dinámico OSPF área única.
+  * Aplicar mejoras prácticas de seguridad en las configuraciones.
+  * Al final, bebe haber comunicación entre todos los dispositivos.
   
-##Datos generas.
+## Datos generas.
   
-  *1a IP de cada red como Gateway.
-  *2da IP a Switches.
-  *3a IP a PC´s.
+  * 1a IP de cada red como Gateway.
+  * 2da IP a Switches.
+  * 3a IP a PC´s.
   
 ## _Documentar_
-##Cálculos VLSM
+## Cálculos VLSM
 
 | Subnet Name | Needed Size | Address | Mask | Dec Mask | Assignable Range |
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -24,4 +24,4 @@
 | TI | 60 | 172.16.78.192 | /26 | 255.255.255.192 | 172.16.78.193 - 172.16.78.254 |
 
 
-##Tabla de direccionamiento para cada dispositivo. 
+## Tabla de direccionamiento para cada dispositivo. 
