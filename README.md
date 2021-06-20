@@ -44,7 +44,7 @@ Por hacer:
       - * [ ] Enrutamiento OSPFv2
 - * [ ] R - Mor
    - * [ ] Red Personal
-      - * [ ] Configuración Básica
+      - * ✅ Configuración Básica
       - * [ ] Enrutamiento OSPFv2 
    - * [ ] Red Almacen 
       - *  [ ] Configuración Básica
