@@ -1,7 +1,7 @@
 !
-version 16.6.4
-no service timestamps log datetime msec
-no service timestamps debug datetime msec
+version 15.4
+service timestamps log datetime msec
+service timestamps debug datetime msec
 service password-encryption
 security passwords min-length 8
 !
@@ -64,9 +64,8 @@ interface Serial0/1/0
  shutdown
 !
 interface Serial0/1/1
- no ip address
+ ip address 10.10.8.5 255.255.255.252
  clock rate 2000000
- shutdown
 !
 interface Serial0/2/0
  no ip address
@@ -74,9 +73,7 @@ interface Serial0/2/0
  shutdown
 !
 interface Serial0/2/1
- no ip address
- clock rate 2000000
- shutdown
+ ip address 10.10.5.2 255.255.255.252
 !
 interface Vlan1
  no ip address
@@ -84,6 +81,11 @@ interface Vlan1
 !
 router ospf 100
  log-adjacency-changes
+ passive-interface GigabitEthernet0/0/0
+ passive-interface GigabitEthernet0/0/1
+ network 10.10.5.0 0.0.0.3 area 0
+ network 10.10.8.4 0.0.0.3 area 0
+ network 172.16.76.0 0.0.3.255 area 0
 !
 ip classless
 !
@@ -113,6 +115,7 @@ banner motd #
 !
 !
 !
+logging 172.16.78.3
 line con 0
  exec-timeout 5 0
  password 7 08330143590B06471C4A
@@ -121,9 +124,11 @@ line con 0
 line aux 0
 !
 line vty 0 4
+ exec-timeout 5 0
  login local
  transport input ssh
 line vty 5 15
+ exec-timeout 5 0
  login local
  transport input ssh
 !

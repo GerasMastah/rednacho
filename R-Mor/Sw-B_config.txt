@@ -4,7 +4,7 @@ service timestamps log datetime msec
 service timestamps debug datetime msec
 service password-encryption
 !
-hostname Sw-A
+hostname Sw-B
 !
 enable secret 5 $1$mERr$IwCM9gJMvOkuFG4I7LnRY.
 !
@@ -95,18 +95,17 @@ interface FastEthernet0/24
 interface GigabitEthernet0/1
 !
 interface GigabitEthernet0/2
- switchport port-security maximum 2
  switchport port-security mac-address sticky 
- switchport port-security violation protect 
+ switchport port-security violation restrict 
 !
 interface Vlan1
- ip address 172.16.76.2 255.255.254.0
+ ip address 172.16.78.2 255.255.255.128
 !
-ip default-gateway 172.16.76.1
+ip default-gateway 172.16.78.1
 !
 banner motd #
 =========================================================================================
-                                    Empresa [Inserte Nombre]
+                                  Empresa [Inserte Nombre]
 =========================================================================================
 #
 logging 172.16.78.3
@@ -116,7 +115,6 @@ logging 172.16.78.3
 line con 0
  password 7 08330143590B06471C4A
  login
- history size 8
  exec-timeout 5 0
 !
 line vty 0 4
