@@ -17,8 +17,8 @@
 * ### Acceso
     * Usuario SSH: moradmin
     * Contraseñas
-        * SSH: m0r4dm1n!
-	* Consola: r-m0rc0n!
+    	* SSH: m0r4dm1n!
+    	* Consola: r-m0rc0n!
         * Exec: r-m0r3x3c!
 * ### Router
     * Longitud de Contraseñas: 8 Carácteres
