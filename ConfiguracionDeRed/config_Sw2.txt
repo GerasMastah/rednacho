@@ -1,0 +1,16 @@
+service password-encryption
+hostname Sw2
+enable secret 5 $1$mERr$/pv26JwYK9/16j5QI7bZ90
+username admin_produccion privilege 1 password 7 0820484300175747405A1C167A2F312B303C721D
+interface GigabitEthernet0/1
+interface GigabitEthernet0/2
+interface Vlan1
+ ip address 172.16.72.2 255.255.252.0
+banner motd ^CAcceso restringido, no acceder sin autorizacion^C
+line con 0
+ login local
+line vty 0 4
+ password 7 08731C1C58180614175E59
+ login
+line vty 5 15
+ login

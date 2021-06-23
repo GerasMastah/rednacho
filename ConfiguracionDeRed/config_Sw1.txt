@@ -1,0 +1,16 @@
+service password-encryption
+hostname Sw1
+enable secret 5 $1$mERr$M75dVI/zDCpdZ7T3S1LQG.
+username admin_sensores privilege 1 password 7 0820484300175747405A1F5724382B3A6026
+interface GigabitEthernet0/1
+interface GigabitEthernet0/2
+interface Vlan1
+ ip address 172.16.64.2 255.255.248.0
+banner motd ^CAcceso restringido, no acceder sin autorizacion^C
+line con 0
+ login local
+line vty 0 4
+ password 7 08731C1C58180614175E59
+ login
+line vty 5 15
+ login
