@@ -30,7 +30,6 @@
     * **Syslog**
         * Información registrada: Tabla de Enrutamiento
         * Servidor: 172.16.78.3
-    * Modo Resiliente
     * **SSH**
         * Versión: 2
         * Longitud de Bits: 768
