@@ -76,13 +76,13 @@ Por hacer "To do":
    - * [ ] Red Producción
       - * [ ] Configuración Básica
       - * [ ] Enrutamiento OSPFv2
-- * [ ] R - Mor
-   - * [ ] Red Personal
-      - * [ ] Configuración Básica
-      - * [ ] Enrutamiento OSPFv2 
-   - * [ ] Red Almacen 
-      - *  [ ] Configuración Básica
-      - * [ ] Enrutamiento OSPFv2 
+- * ✅ R - Mor
+   - * ✅ Red Personal
+      - * ✅ Configuración Básica
+      - * ✅ Enrutamiento OSPFv2 
+   - * ✅ Red Almacen 
+      - * ✅ Configuración Básica
+      - * ✅ Enrutamiento OSPFv2 
 - * [ ] R - Chis 
    - * [ ] Red Contabilidad/Legal
       - *  [ ] Configuración Básica

@@ -1,0 +1,138 @@
+!
+version 15.4
+service timestamps log datetime msec
+service timestamps debug datetime msec
+service password-encryption
+security passwords min-length 8
+!
+hostname R-Mor
+!
+login block-for 120 attempts 3 within 15
+!
+!
+enable secret 5 $1$mERr$IwCM9gJMvOkuFG4I7LnRY.
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username moradmin secret 5 $1$mERr$ml6nlzxrpsY5Fq7kujELC1
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name r-mor.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 172.16.76.1 255.255.254.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 172.16.78.1 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/1/1
+ ip address 10.10.8.5 255.255.255.252
+ clock rate 2000000
+!
+interface Serial0/2/0
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/2/1
+ ip address 10.10.5.2 255.255.255.252
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/0
+ passive-interface GigabitEthernet0/0/1
+ network 10.10.5.0 0.0.0.3 area 0
+ network 10.10.8.4 0.0.0.3 area 0
+ network 172.16.76.0 0.0.3.255 area 0
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+ip access-list extended sl_def_acl
+ deny tcp any any eq telnet
+ deny tcp any any eq www
+ deny tcp any any eq 22
+ permit tcp any any eq 22
+!
+banner login #
+--------------------------------------------------------------------------------
+================================================================================
+                             Solo personal autorizado
+================================================================================
+--------------------------------------------------------------------------------
+#
+banner motd #
+================================================================================
+                            Empresas [Inserte Nombre]
+================================================================================
+#
+!
+!
+!
+!
+!
+logging 172.16.78.3
+line con 0
+ exec-timeout 5 0
+ password 7 08330143590B06471C4A
+ login
+!
+line aux 0
+!
+line vty 0 4
+ exec-timeout 5 0
+ login local
+ transport input ssh
+line vty 5 15
+ exec-timeout 5 0
+ login local
+ transport input ssh
+!
+!
+!
+end
+
