@@ -65,28 +65,33 @@
 | Laptop 2 | Fa0 | 172.16.78.31 | 255.255.255.192 |  
 
 Por hacer "To do":
-* [ ] Documentación
-- ✅ VLSM
-- * [ ] Tablas de Enrutamiento
-* [ ] Configuración
-- * [ ] R - Son
-   - * [ ] Red Sensores
-      - * [ ] Configuración Básica
-      - * [ ] Enrutamiento OSPFv2
-   - * [ ] Red Producción
-      - * [ ] Configuración Básica
-      - * [ ] Enrutamiento OSPFv2
-* ✅ R - Mor
-   * ✅ Red Personal
-      * ✅ Configuración Básica
-      * ✅ Enrutamiento OSPFv2 
-   * ✅ Red Almacen 
-      * ✅ Configuración Básica
-      * ✅ Enrutamiento OSPFv2 
-- * [ ] R - Chis 
-   - * [ ] Red Contabilidad/Legal
-      - *  [ ] Configuración Básica
-      - *  [ ] Enrutamiento OSPFv2 
-    - * [ ] Red TI
-      - * [ ] Configuración Básica
-      - * [ ] Enrutamiento OSPFv2 
+* ✅ Documentación
+  * ✅ VLSM
+  * ✅ Tablas de Enrutamiento
+        
+* ✅ Configuración
+        
+  * ✅ R - Son
+        
+    * ✅ Red Sensores
+        * ✅ Configuración Básica
+        * ✅ Enrutamiento OSPFv2
+    * ✅ Red Producción
+        * ✅ Configuración Básica
+        * ✅ Enrutamiento OSPFv2
+  * ✅ R - Mor
+        
+    * ✅ Red Personal
+        * ✅ Configuración Básica
+        * ✅ Enrutamiento OSPFv2 
+    * ✅ Red Almacen 
+        * ✅ Configuración Básica
+        * ✅ Enrutamiento OSPFv2 
+  * ✅ R - Chis
+         
+    * ✅ Red Contabilidad/Legal
+        *  ✅ Configuración Básica
+        *  ✅ Enrutamiento OSPFv2 
+    * ✅ Red TI
+        * ✅ Configuración Básica
+        * ✅ Enrutamiento OSPFv2 
